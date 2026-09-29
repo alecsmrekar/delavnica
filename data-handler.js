@@ -66,7 +66,7 @@ class DataHandler {
     async initIndexedDB() {
         try {
             this.db = await new Promise((resolve, reject) => {
-                const request = indexedDB.open('MechanicShopDB', 1);
+                const request = indexedDB.open('DelavnicaDB', 1);
                 request.onerror = () => reject(request.error);
                 request.onsuccess = () => resolve(request.result);
                 request.onupgradeneeded = (event) => {

@@ -73,7 +73,7 @@ class TableManager {
         const container = document.getElementById(CONSTANTS.ELEMENTS.VEHICLE_SERVICES);
 
         if (vehicleServices.length === 0) {
-            container.innerHTML = '<div class="empty-state"><p>No services recorded for this vehicle.</p></div>';
+            container.innerHTML = `<div class="empty-state"><p>${CONSTANTS.MESSAGES.NO_SERVICES_RECORD}</p></div>`;
             return;
         }
 

@@ -1,5 +1,5 @@
 // Application state and managers
-class MechanicShopApp {
+class DelavnicaApp {
     constructor() {
         this.vehicles = [];
         this.services = [];
@@ -11,7 +11,7 @@ class MechanicShopApp {
 }
 
 // Global app instance
-const app = new MechanicShopApp();
+const app = new DelavnicaApp();
 
 // Initialize app
 document.addEventListener('DOMContentLoaded', async () => {
@@ -380,12 +380,12 @@ async function loadData() {
 
 function updateShopTitle() {
     const titleEl = document.getElementById(CONSTANTS.ELEMENTS.SHOP_TITLE);
-    titleEl.textContent = app.shopTitle || 'Servis Vozil';
-    document.title = app.shopTitle || 'Servis Vozil';
+    titleEl.textContent = app.shopTitle || 'Delavnica';
+    document.title = app.shopTitle || 'Delavnica';
 }
 
 function promptShopTitle() {
-    const title = prompt('Vnesite ime trgovine / servisa:');
+    const title = prompt(CONSTANTS.MESSAGES.ENTER_SHOP_TITLE);
     if (title && title.trim()) {
         app.shopTitle = title.trim();
         updateShopTitle();
@@ -394,7 +394,7 @@ function promptShopTitle() {
 }
 
 function editShopTitle() {
-    const title = prompt('Vnesite ime trgovine / servisa:', app.shopTitle);
+    const title = prompt('Uredi ime delavnice:', app.shopTitle);
     if (title !== null && title.trim()) {
         app.shopTitle = title.trim();
         updateShopTitle();

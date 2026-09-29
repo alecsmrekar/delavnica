@@ -63,7 +63,9 @@ const CONSTANTS = {
         FILE_NOT_FOUND: 'Datoteka ni bila najdena. Morda je bila premaknjena, preimenovana ali izbrisana. Prosimo, izberite datoteko znova.',
         NO_VEHICLES_SEARCH: 'Nobeno vozilo ne ustreza vašim iskalnima kriterijem.',
         NO_SERVICES_SEARCH: 'Noben servis ne ustreza vašim iskalnima kriterijem.',
-        UNKNOWN_VEHICLE: 'Neznano Vozilo'
+        UNKNOWN_VEHICLE: 'Neznano Vozilo',
+        NO_SERVICES_RECORD: 'Za to vozilo še ni zabeleženih servisov.',
+        ENTER_SHOP_TITLE: 'Vnesite ime delavnice:'
     },
 
     // Modal Titles
